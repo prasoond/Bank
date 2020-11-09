@@ -16,15 +16,15 @@
 
 
 ## FLOW OF PROGRAM EXECUTION
- a) web.xml is the starting point server initialy search for the request("/" initially) in the web.xml. 
- b) The url pattern will be matched and the servlet with the specified name will be searched("spring" here).  
- c) Execution goes to the servlet with name where we give our servlet class in web.xml ("dispatcherServlet class" here). 
- d) dispatcherServlet class sends the execution to spring-servlet.xml where we give the base package name("com.bank").
- e) The dispatcherServlet class search for controller classes for every request and search the class handling the request.
+ 1. web.xml is the starting point server initialy search for the request("/" initially) in the web.xml. 
+ 2. The url pattern will be matched and the servlet with the specified name will be searched("spring" here).  
+ 3. Execution goes to the servlet with name where we give our servlet class in web.xml ("dispatcherServlet class" here). 
+ 4. dispatcherServlet class sends the execution to spring-servlet.xml where we give the base package name("com.bank").
+ 5. The dispatcherServlet class search for controller classes for every request and search the class handling the request.
     package=com.bank.controller
- f) Controller class can be mady by using annotation @controller(import the related package)
- g) Controller class is handling all the Http Requests and sending the to AppDao Class through a service class called AppService.
- h) In AppDao class all the JDBC related code is present.
+ 6. Controller class can be mady by using annotation @controller(import the related package)
+ 7. Controller class is handling all the Http Requests and sending the to AppDao Class through a service class called AppService.
+ 8. In AppDao class all the JDBC related code is present.
 
 
 ## Minimum Requirments
@@ -33,40 +33,40 @@
 
 
 ## DEPENDENCIES
-spring-orm-4.3.8.RELEASE
-spring-beans-4.3.8.RELEASE
-spring-core-4.3.8.RELEASE
-spring-tx-4.3.8.RELEASE
-spring-test-4.3.8.RELEASE
-spring-jdbc-4.3.8.RELEASE
-mssql-jdbc-6.1.7.jre8-preview
-javax.servlet-api-3.1.0
-jsp-api-2.1
-jstl-1.2
-standard-1.1.2
-junit-4.11
-hamcrest-core-1.3
-commons-codec-1.4
-log4j-1.2.17
-gson-2.8.1
-json-20160810
-commons-fileupload-1.2
-commons-io-1.4
-mail-1.4
-activation-1.1
-dom4j-1.6
-xml-apis-1.0.b2
-poi-3.7
-poi-ooxml-3.7
-poi-ooxml-schemas-3.7
-geronimo-stax-api_1.0_spec-1.0
-xmlbeans-2.3.0
-stax-api-1.0.1
-pdfbox-app-2.0.7
-pdfbox-2.0.7
-fontbox-2.0.7
-commons-logging-1.2
-hashids-1.0.3
-commons-net-3.6
+1. spring-orm-4.3.8.RELEASE
+2. spring-beans-4.3.8.RELEASE
+3. spring-core-4.3.8.RELEASE
+4. spring-tx-4.3.8.RELEASE
+5. spring-test-4.3.8.RELEASE
+6. spring-jdbc-4.3.8.RELEASE
+7. mssql-jdbc-6.1.7.jre8-preview
+8. javax.servlet-api-3.1.0
+9. jsp-api-2.1
+10. jstl-1.2
+11. standard-1.1.2
+12. junit-4.11
+13. hamcrest-core-1.3
+14. commons-codec-1.4
+15. log4j-1.2.17
+16. gson-2.8.1
+17. json-20160810
+18. commons-fileupload-1.2
+19. commons-io-1.4
+20. mail-1.4
+21. activation-1.1
+22. dom4j-1.6
+23. xml-apis-1.0.b2
+24. poi-3.7
+25. poi-ooxml-3.7
+26. poi-ooxml-schemas-3.7
+27. geronimo-stax-api_1.0_spec-1.0
+28. xmlbeans-2.3.0
+29. stax-api-1.0.1
+30. pdfbox-app-2.0.7
+31. pdfbox-2.0.7
+32. fontbox-2.0.7
+33. commons-logging-1.2
+34. hashids-1.0.3
+35. commons-net-3.6
 
 
