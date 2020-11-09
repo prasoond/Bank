@@ -250,6 +250,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>3.0.3</version>
+        <configuration>
+  <appName>optimusbank</appName>
+</configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
