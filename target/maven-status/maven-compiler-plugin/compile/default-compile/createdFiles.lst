@@ -1,8 +1,0 @@
-com\bank\service\AppService.class
-com\bank\controller\AppController.class
-com\bank\dao\AppDaoImpl.class
-com\bank\mail\SendMail.class
-com\bank\model\User.class
-com\bank\service\AppServiceImpl.class
-com\bank\dao\AppDao.class
-com\bank\mail\SimpleMailAuthenticator.class
